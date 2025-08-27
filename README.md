@@ -97,4 +97,4 @@ To enable debugging, modify your `config.plist` as follows:
   - `Target` → **67**  
 
 - `NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args`  
-  Add: `-v keepsyms=1 debug=0x100`
+  Add: `-v debug=0x100`
