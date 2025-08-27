@@ -78,6 +78,7 @@ After installation:
 2. Copy the EFI folder from the USB installer to the disk’s EFI partition.  
 3. Edit your `config.plist` and set:  
    - `Misc -> Security -> SecureBootModel` → **Default**
+   - `Misc -> Boot -> HideAuxiliary` → **True**
 
 ---
 
