@@ -84,3 +84,16 @@ After installation:
 ## 🖥️ Post-Install
 - **Dual boot configuration:** [Guide](https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html)  
 - **Fix iServices (iCloud, iMessage, etc.):** [Guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)  
+
+---
+
+## 🐞 Debugging
+To enable debugging, modify your `config.plist` as follows:
+
+- `Misc -> Debug`  
+  - `AppleDebug` → **True**  
+  - `ApplePanic` → **True**  
+  - `Target` → **67**  
+
+- `NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args`  
+  Add: `-v keepsyms=1 debug=0x100`
